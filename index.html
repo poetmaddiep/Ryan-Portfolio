@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ryan Rutkoskie </title> - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Ryan Rutkoskie</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+                <a href="#performances" class="dropbtn">Performances</a>
+                <div class="dropdown-content">
+                    <a href="#videos">Videos</a>
+                    <a href="#calendar">Calendar</a>
+                </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Section -->
+    <section id="home" class="section home">
+        <h1>Introducing Ryan Rutkoskie </h1>
+        <p> Performance Poet </p>
+        <a href="#performances" class="cta-button">Watch Performances</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Ryan </h2>
+        <p>Maddie Poet is a spoken word artist who uses her words to explore</p>
+    </section>
+
+    <!-- Performances Section -->
+    <section id="performances" class="section performances">
+        <h2>Performances</h2>
+        <div id="videos">
+            <h3>Featured Videos</h3>
+            <iframe src="https://www.youtube.com/embed/example" title="Performance 1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="calendar">
+            <h3>Upcoming Performances</h3>
+            <p>Stay tuned for updates!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Book Me</h2>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Ryan Rutkoskie. All rights reserved.</p>
+    </footer>
+</body>
+</html>
