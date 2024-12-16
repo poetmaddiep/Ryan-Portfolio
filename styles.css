@@ -8,7 +8,17 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+/* Header (Main Name) */
+h1, .main-header {
+    font-family: "Impact", sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #A2E1E0; /* Accent teal */
+    margin: 1rem 0;
+    text-align: center;
+    letter-spacing: 3px;
+}
+h2, h3 {
     font-family: 'Cormorant Garamond', serif;
     color: #1E3845;
     margin-bottom: 1rem;
@@ -30,9 +40,13 @@ p {
 }
 
 .navbar .logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
-    font-weight: bold;
+     font-family: "Impact", sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #A2E1E0; /* Accent teal */
+    margin: 1rem 0;
+    text-align: center;
+    letter-spacing: 3px;
 }
 
 .nav-links {
@@ -91,7 +105,7 @@ p {
 }
 
 .section.about {
-    background-color: #b9d3df;
+    background-color: #73a7bf;
     color: #2c2c2c;
 }
 
