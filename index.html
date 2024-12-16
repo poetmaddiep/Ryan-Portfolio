@@ -1,23 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Rutkoskie - Performance Poet</title>
+    <title> Ryan Rutokoskie - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">Ryan Rutkoskie</div>
-        <div class="sub-logo">Performance Poet</div>
+        <div class="logo"> Ryan Rutkoskie</div>
         <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li class="dropdown">
                 <a href="#performances" class="dropbtn">Performances</a>
                 <div class="dropdown-content">
                     <a href="#videos">Videos</a>
-                    <a href="#gallery">Gallery</a>
+                    <a href="#calendar">Calendar</a>
                 </div>
             </li>
             <li><a href="#contact">Contact</a></li>
@@ -26,39 +27,25 @@
 
     <!-- Homepage Section -->
     <section id="home" class="section home">
-        <h1>Ryan Rutkoskie</h1>
+        <h1> Spoken Word Performer</h1>
+        
         <a href="#performances" class="cta-button">Watch Performances</a>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section about">
-        <div class="about-container">
-            <img src="media/ryan.jpg" alt="Ryan Rutkoskie" class="about-photo">
-            <div class="about-text">
-                <h2>About Ryan</h2>
-                <p>Ryan Rutkoskie is an acclaimed performance poet whose work dives into profound themes of identity, resilience, and connection. His evocative performances captivate audiences, combining powerful storytelling with poignant imagery.</p>
-            </div>
-        </div>
+        <h2>About Ryan</h2>
+        <p> Born from ice, Ryan Rutkoskie is a performance poet hailing from Kalamazoo, Michigan. </p>
     </section>
 
     <!-- Performances Section -->
     <section id="performances" class="section performances">
         <h2>Performances</h2>
-
-        <!-- Featured Videos -->
-        <div id="videos" class="content-block">
+        <div id="videos">
             <h3>Featured Videos</h3>
             <iframe src="https://www.youtube.com/embed/example" title="Performance 1" frameborder="0" allowfullscreen></iframe>
         </div>
-
-        <!-- Gallery -->
-        <div id="gallery" class="content-block">
-            <h3>Gallery</h3>
-            <p>Photos of Ryan's performances coming soon!</p>
-        </div>
-
-        <!-- Upcoming Performances -->
-        <div id="calendar" class="content-block">
+        <div id="calendar">
             <h3>Upcoming Performances</h3>
             <p>Stay tuned for updates!</p>
         </div>
@@ -67,7 +54,7 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
-        <form action="/submit-form" method="post" class="contact-form">
+        <form action="/submit-form" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -77,14 +64,13 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit" class="btn-primary">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Ryan Rutkoskie. All rights reserved.</p>
-        <p><a href="https://instagram.com/ryanrutkoskie" target="_blank">Follow Ryan on Instagram</a></p>
+        <p>&copy; 2024 Ryan Rutokoskie. All rights reserved.</p>
     </footer>
 </body>
 </html>
