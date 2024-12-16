@@ -7,8 +7,6 @@ body {
     background-color: #f9f6f1;
     line-height: 1.6;
 }
-
-/* Header (Main Name) */
 h1, .main-header {
     font-family: "Impact", sans-serif;
     font-size: 3.5rem;
@@ -17,8 +15,7 @@ h1, .main-header {
     margin: 1rem 0;
     text-align: center;
     letter-spacing: 3px;
-}
-h2, h3 {
+ h2, h3 {
     font-family: 'Cormorant Garamond', serif;
     color: #1E3845;
     margin-bottom: 1rem;
@@ -37,16 +34,6 @@ p {
     background-color: #1E3845;
     padding: 1rem 2rem;
     color: #fff;
-}
-
-.navbar .logo {
-     font-family: "Impact", sans-serif;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    color: #A2E1E0; /* Accent teal */
-    margin: 1rem 0;
-    text-align: center;
-    letter-spacing: 3px;
 }
 
 .nav-links {
@@ -107,6 +94,7 @@ p {
 .section.about {
     background-color: #73a7bf;
     color: #2c2c2c;
+    text-align: left; 
 }
 
 .section.performances {
@@ -116,6 +104,12 @@ p {
 .section.contact {
     background-color: #1E3845;
     color: #fff;
+}
+
+.about-photo {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Buttons */
