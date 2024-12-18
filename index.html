@@ -3,91 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ryan Rutkoskie</title>
+  <title>Ryan's Poetry</title>
   <link rel="stylesheet" href="styles.css">
-   <link href="https://fonts.googleapis.com/css2?family=Impact&display=swap" rel="stylesheet">
-</head>
 </head>
 <body>
-   <!-- Navigation Bar -->
-    <header>
-        <div class="navbar">
-            <h1 id="site-title">Ryan's World of Poetry</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#poetry">Poetry</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#performances">Performances</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <!-- Header Section -->
+  <header class="hero">
+    <div class="overlay">
+      <h1>Ryan's World of Words</h1>
+      <p>Breaking norms, bending words, stirring souls.</p>
+      <a href="#poetry" class="btn">Explore Poetry</a>
+    </div>
+  </header>
 
-  <!-- Homepage Section -->
-  <section id="home">
-    <div class="welcome">
-      <h2>Introducing Ryan Rutkoskie</h2>
-      <p>Explore a vibrant tapestry of words, visuals, and creativity.</p>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Ryan</h2>
+    <p>Hailing from Kalamazoo, Michigan is Ryan Rutkoskie. Since discovering poetry slams in Michigan,
+      Ryan Rutkoskie has been combining the the energy of slam performance with the influence of writers he was
+      exposed to early in life like Sylvia Plath and Philip Levine. </p>
+    <div class="hidden-gem">
+      <p>Click the gem to reveal: <span id="hidden-poem">❄️</span></p>
+      <p class="hidden-text">"I am. I am. I am." – Sylvia Plath</p>
     </div>
   </section>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about-container">
-      <img src="images/Ryan-Main.JPG" alt="Ryan" class="about-img">
-      <p>Ryan is a creative force, blending poetry, art, and performance into a colorful modern aesthetic...</p>
+  <!-- Poetry Section -->
+  <section id="poetry" class="section">
+    <h2>Poetry Showcase</h2>
+    <div class="poetry-grid">
+      <div class="poetry-tile">
+        <p>"The snow falls like memories, blurring lines of past and present."</p>
+      </div>
+      <div class="poetry-tile">
+        <p>"Pairing love with art, like red wine with jazz."</p>
+      </div>
+      <div class="poetry-tile">
+        <p>"Capitalism cracks, but I still dream of tenderness."</p>
+      </div>
     </div>
   </section>
 
   <!-- Gallery Section -->
-  <section id="gallery">
+  <section id="gallery" class="section">
     <h2>Gallery</h2>
     <div class="gallery-container">
-      <div id="hex-grid">
-        <div class="hex" data-quote="“I am terrified by this dark thing that sleeps in me.” - Sylvia Plath"></div>
-        <div class="hex" data-quote="“I want to live and feel all the shades, tones and variations...” - Sylvia Plath"></div>
-        <div class="hex" data-quote="“Is there no way out of the mind?” - Sylvia Plath"></div>
+      <button class="arrow" id="prev">&#10094;</button>
+      <div class="gallery-images">
+        <img src="image1.jpg" alt="Ryan Performing">
+        <img src="image2.jpg" alt="Ryan Fashion">
+        <img src="image3.jpg" alt="Ryan in Music Video">
       </div>
-      <div class="gallery">
-        <img src="images/Ryan-Art.JPG" alt="Ryan paints abstract art" class="gallery-img">
-        <img  src="images/Ryan-Gallery2.JPG" alt="Ryan in red light at a club scene class="gallery-img">
-        <button class="gallery-btn prev">&lt;</button>
-        <button class="gallery-btn next">&gt;</button>
-      </div>
+      <button class="arrow" id="next">&#10095;</button>
     </div>
   </section>
 
-  <!-- Performances Section -->
-  <section id="performances">
-    <h2>Featured Performance</h2>
-     <iframe 
-      width="560" 
-      height="315" 
-      src="https://www.youtube.com/embed/fNWlJd9nOro?si=vvTeQrXpHm9I-yhd" 
-      title="YouTube video player" 
-      frameborder="0" 
-      allowfullscreen></iframe>
-
-
-    <h3>Upcoming Performances</h3>
-    <p>Stay tuned for updates on Ryan's upcoming shows!</p>
-  </section>
-
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name">
-      <input type="email" name="email" placeholder="Your Email">
-      <textarea name="message" placeholder="Your Message"></textarea>
-      <button type="submit">Submit</button>
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form action="submit.php">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
     </form>
+    <a href="https://instagram.com/ryansprofile" target="_blank" class="btn">Follow Ryan on Instagram</a>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>Ryan &copy; All Rights Reserved</p>
+    <p>&copy; 2024 Ryan Rutkoskie. All Rights Reserved.</p>
   </footer>
 
   <script src="script.js"></script>
