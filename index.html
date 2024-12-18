@@ -1,76 +1,93 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ryan Rutokoskie - Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Rutkoskie</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo"> Ryan Rutkoskie</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li class="dropdown">
-                <a href="#performances" class="dropbtn">Performances</a>
-                <div class="dropdown-content">
-                    <a href="#videos">Videos</a>
-                    <a href="#calendar">Calendar</a>
-                </div>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <!-- Navigation Bar -->
+  <header>
+    <h1>Ryan</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#performances">Performances</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Homepage Section -->
-    <section id="home" class="section home">
-        <h1> Spoken Word Performer</h1>
-        
-        <a href="#performances" class="cta-button">Watch Performances</a>
-    </section>
+  <!-- Homepage Section -->
+  <section id="home">
+    <div class="welcome">
+      <h2>Introducing Ryan Rutkoskie</h2>
+      <p>Explore a vibrant tapestry of words, visuals, and creativity.</p>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <h2>About Ryan</h2>
-        <p> Born from ice, Ryan Rutkoskie is a performance poet hailing from Kalamazoo, Michigan. </p>
-    </section>
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/Ryan-Main.JPG" alt="Ryan" class="about-img">
+      <p>Ryan is a creative force, blending poetry, art, and performance into a colorful modern aesthetic...</p>
+    </div>
+  </section>
 
-    <!-- Performances Section -->
-    <section id="performances" class="section performances">
-        <h2>Performances</h2>
-        <div id="videos">
-            <h3>Featured Videos</h3>
-            <iframe src="https://www.youtube.com/embed/fNWlJd9nOro?si=4z9KlwevKUKp0NvI" title="Gym Selfie" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div id="calendar">
-            <h3>Upcoming Performances</h3>
-            <p>Stay tuned for updates!</p>
-        </div>
-    </section>
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <div id="hex-grid">
+        <div class="hex" data-quote="“I am terrified by this dark thing that sleeps in me.” - Sylvia Plath"></div>
+        <div class="hex" data-quote="“I want to live and feel all the shades, tones and variations...” - Sylvia Plath"></div>
+        <div class="hex" data-quote="“Is there no way out of the mind?” - Sylvia Plath"></div>
+      </div>
+      <div class="gallery">
+        <img src="images/Ryan-Art.JPG" alt="Ryan paints abstract art" class="gallery-img">
+        <img  src="images/Ryan-Gallery2.JPG" alt="Ryan in red light at a club scene class="gallery-img">
+        <button class="gallery-btn prev">&lt;</button>
+        <button class="gallery-btn next">&gt;</button>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <h2>Contact Me</h2>
-        <form action="/submit-form" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+  <!-- Performances Section -->
+  <section id="performances">
+    <h2>Featured Performance</h2>
+     <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/fNWlJd9nOro?si=vvTeQrXpHm9I-yhd" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allowfullscreen></iframe>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+    <h3>Upcoming Performances</h3>
+    <p>Stay tuned for updates on Ryan's upcoming shows!</p>
+  </section>
 
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name">
+      <input type="email" name="email" placeholder="Your Email">
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 Ryan Rutokoskie. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>Ryan &copy; All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
