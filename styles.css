@@ -1,3 +1,52 @@
+
+#site-title {
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    color: #ffd700;
+    margin: 0;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+
+  
+/* General Section Styling */
+section {
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#about {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#poetry {
+  background-color: #333;
+  color: white;
+}
+
+#hex-grid {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+#contact {
+  background-color: #fefefe;
+  color: #333;
+}
+
+
 /* General Reset */
 body, h1, h2, p, ul, li, img, iframe {
   margin: 0;
@@ -23,18 +72,6 @@ header {
 header h1 {
   font-family: Impact, sans-serif;
   color: yellow;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 /* About Section */
@@ -104,3 +141,5 @@ nav a {
 .hex:hover {
   transform: scale(1.1);
 }
+
+
