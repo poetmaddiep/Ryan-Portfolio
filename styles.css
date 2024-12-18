@@ -1,120 +1,9 @@
 /* General Reset */
-body, h1, h2, p, ul, li, img, iframe {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #333;
   background-color: #004D5B; /* Deep teal background */
-  line-height: 1.6;
-}
-
-/* Header */
-header {
-  background: #004D5B; /* Deep teal */
-  color: #FFD700; /* Gold */
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h1 {
-  font-family: 'Impact', sans-serif;
-  font-size: 2rem;
-  margin: 0;
-}
-
-.navbar nav {
-  display: flex;
-  gap: 20px;
-}
-
-.navbar nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 5px 10px;
-}
-
-.navbar nav a:hover {
-  background-color: #FFD700;
-  color: #004D5B;
-  border-radius: 5px;
-}
-
-/* About Section */
-#about {
-  background-color: #f4f4f4;
-  color: #333;
-  display: flex;
-  gap: 20px;
-  padding: 40px;
-  align-items: flex-start;
-}
-
-.about-img {
-  max-width: 300px;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-#about p {
-  flex: 1;
-  text-align: justify;
-}
-
-/* Gallery Section */
-#gallery {
-  position: relative;
-  padding: 50px 20px;
-  color: white;
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background: repeating-linear-gradient(
-    120deg,
-    #2e8b57,
-    #2e8b57 10px,
-    #004D5B 10px,
-    #004D5B 20px
-  );
-}
-
-.hex {
-  width: 60px;
-  height: 60px;
-  background-color: #FFD700; /* Gold */
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  margin: 5px;
-  transition: transform 0.3s ease;
-}
-
-.hex:hover {
-  transform: scale(1.1);
-}
-
-/* Buttons */
-.btn {
-  background-color: #FFD700;
-  color: black;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-.btn:hover {
-  background-color: white;
-  color: #004D5B;
 }
 
 /* Hero Section */
@@ -133,4 +22,111 @@ header h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.btn {
+  background-color: #FFD700; /* Gold button */
+  color: black;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Section General */
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Hidden Gem */
+.hidden-gem {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.hidden-text {
+  display: none;
+  color: #FFD700;
+  font-style: italic;
+}
+
+.hidden-gem:hover .hidden-text {
+  display: inline;
+}
+
+/* Poetry Showcase */
+.poetry-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.poetry-tile {
+  background: white;
+  padding: 20px;
+  border: 2px solid #FFD700;
+  width: 300px;
+  font-style: italic;
+}
+
+/* Gallery */
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gallery-images {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+}
+
+.gallery-images img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  color: #FFD700;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  left: 5%;
+}
+
+#next {
+  right: 5%;
+}
+
+/* Contact Section */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+textarea {
+  height: 100px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #003840; /* Slightly darker teal */
+  color: white;
 }
