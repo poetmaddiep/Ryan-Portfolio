@@ -1,21 +1,25 @@
-// Gallery Functionality
-const galleryImages = ['Ryan-Art.JPG', 'Ryan-Gallery2.JPG'];
+// Gallery Navigation
+const images = ['images/ryan1.jpg', 'images/ryan2.jpg', 'images/ryan3.jpg'];
 let currentImageIndex = 0;
 
-document.querySelector('.next').addEventListener('click', () => {
-  currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
-  document.querySelector('.gallery-img').src = `images/${galleryImages[currentImageIndex]}`;
+document.getElementById('prev-btn').addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    document.getElementById('gallery-image').src = images[currentImageIndex];
 });
 
-document.querySelector('.prev').addEventListener('click', () => {
-  currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
-  document.querySelector('.gallery-img').src = `images/${galleryImages[currentImageIndex]}`;
+document.getElementById('next-btn').addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    document.getElementById('gallery-image').src = images[currentImageIndex];
 });
 
-// Hexagon Easter Eggs
-document.querySelectorAll('.hex').forEach((hex) => {
-  hex.addEventListener('click', function () {
-    document.querySelector('.gallery-img').src = 'images/Sylvia-1.JPG';
-    alert(this.dataset.quote);
-  });
-});
+// Performances Section
+fetch('performances.json')
+    .then(response => response.json())
+    .then(data => {
+        const performanceList = document.getElementById('performance-list');
+        data.performances.forEach(performance => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${performance.date} - ${performance.venue}`;
+            performanceList.appendChild(listItem);
+        });
+    });
